@@ -62,7 +62,16 @@ a:hover, button:hover {
 .top {
     position: relative;
     height: calc(557 / 390 * 100vw);
-    margin-bottom: calc(32 / 390 * 100vw);;
+    margin-bottom: calc(32 / 390 * 100vw);
+    ;
+}
+
+@media (min-width: 768px) {
+    .top {
+        height: calc(720 / 1500 * 100vw);
+        margin-bottom: calc(48 / 1500 * 100vw);
+        ;
+    }
 }
 
 .company-logo {
@@ -73,6 +82,13 @@ a:hover, button:hover {
     width: calc(143 / 390 * 100vw);
 }
 
+@media (min-width: 768px) {
+    .company-logo {
+        margin: calc(38 / 1500 * 100vw) auto 0;
+        width: calc(166 / 1500 * 100vw);
+    }
+}
+
 .main-visual {
     position: relative;
     height: 115vw;
@@ -81,7 +97,7 @@ a:hover, button:hover {
 
 @media (min-width: 768px) {
     .main-visual {
-        height: 45rem;
+        height: calc(720/1500 * 100vw);
     }
 }
 
@@ -99,13 +115,23 @@ a:hover, button:hover {
 }
 
 @media (min-width: 768px) {
-    .main-visual::before {}
+    .main-visual::before {
+        background-position: -5.5vw -25.8vw;
+        background-size: 134vw;
+    }
 }
 
 .title {
     position: absolute;
     top: 107vw;
     padding-left: calc(24 / 390 * 100vw);
+}
+
+@media (min-width: 768px) {
+    .title {
+        top: 18vw;
+        padding-left: calc(225 / 1500 * 100vw);
+    }
 }
 
 .title-product-name {
@@ -115,6 +141,14 @@ a:hover, button:hover {
     font-weight: 400;
 }
 
+@media (min-width: 768px) {
+    .title-product-name {
+        font-size: calc(50 / 1500 * 100vw);
+        line-height: calc(68/50);
+        letter-spacing: calc(14.5/1500 *100vw);
+    }
+}
+
 .title-catch {
     margin-top: 0.5rem;
     font-size: calc(20 / 390 * 100vw);
@@ -122,6 +156,13 @@ a:hover, button:hover {
     letter-spacing: calc(5.92/390 *100vw);
 }
 
+@media (min-width: 768px) {
+    .title-catch {
+        font-size: calc(25 / 1500 * 100vw);
+        line-height: calc(36/25);
+        letter-spacing: calc(7.3/1500 *100vw);
+    }
+}
 
 /* ショッピング
 ------------------------------------- */
@@ -130,20 +171,25 @@ a:hover, button:hover {
     line-height: calc(26/18);
 }
 
-.shopping__background {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    background-color: #F0F4FF;
-}
-
-
-@media (max-width: 767px) {
     .shopping__background {
+        display: flex;
+        align-items: center;
         flex-direction: column;
+        background-color: #F0F4FF;
         row-gap: calc(20 / 390 * 100vw);
         padding-top: calc(22/ 390 * 100vw);
         padding-bottom: calc(34/ 390 * 100vw);
+    }
+
+@media (min-width: 768px) {
+    .shopping__background {
+        flex-direction: row;
+        width: calc(1000/1500 *100vw);
+        margin: 0 auto;
+        padding: 0 calc(48/1500 *100vw);
+        height: calc(146 /1500 *100vw);
+        column-gap: calc(32 /1500 *100vw);
+        justify-content: center;
     }
 }
 
@@ -151,16 +197,41 @@ a:hover, button:hover {
     text-align: center;
 }
 
+@media (min-width: 768px) {
+    .shopping__product {
+        text-align: left;
+        width: calc(240/1500*100vw);
+    }
+}
+
 .shopping__product-name {
     font-size: calc(18 / 390 * 100vw);
     letter-spacing: .1rem;
-    margin-bottom: calc(5/ 390 * 100vw);
+    margin-bottom: calc(4.8/390 *100vw);
+}
+
+@media (min-width: 768px) {
+    .shopping__product-name {
+        font-size: calc(24 / 1500 * 100vw);
+        letter-spacing: .15rem;
+        padding-top: 0.3rem;
+        margin-bottom: 0;
+    }
 }
 
 .shopping__product-price {
     font-size: calc(14 / 390 * 100vw);
     line-height: calc(20/14);
     letter-spacing: .07rem;
+}
+
+@media (min-width: 768px) {
+    .shopping__product-price {
+        font-size: calc(16 / 1500 * 100vw);
+        line-height: calc(20/14);
+        letter-spacing: .07rem;
+        padding-top: 0.3rem;
+    }
 }
 
 .shopping__button {
@@ -173,6 +244,15 @@ a:hover, button:hover {
     color: #fff;
     font-weight: 600;
     border-radius: 34px;
+}
+
+@media (min-width: 768px) {
+    .shopping__button {
+        width: calc(300 / 1500 *100vw);
+        height: calc(58 / 1500 * 100vw);
+        font-size: calc(18 / 1500 * 100vw);
+        color: #fff;
+    }
 }
 
 .shopping__button--online {

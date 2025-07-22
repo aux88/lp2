@@ -172,6 +172,12 @@ a:hover, button:hover {
     line-height: calc(26/18);
 }
 
+@media (min-width: 768px) {
+    .shopping {
+        margin-bottom: 3rem;
+    }
+}
+
 .shopping__background {
     display: flex;
     align-items: center;
@@ -277,9 +283,33 @@ a:hover, button:hover {
     background-size: 327.5vw;
 }
 
+@media (min-width: 768px) {
+    .feature {
+        display: flex;
+        height: 550px;
+background-position: 100% 54%;
+        background-size: 135.8vw;
+        align-items: center;
+    }
+
+    .feature-container {
+        display: flex;
+        width: 100%;
+        flex-direction: row;
+        justify-content: flex-end;
+    }
+}
+
 .feature__textbox {
     color: #fff;
     padding-top: calc(35.2/390*100vw);
+}
+
+@media (min-width: 768px) {
+    .feature__textbox {
+        padding-top: 0rem;
+        width: 420px;
+    }
 }
 
 .feature__title {
@@ -288,10 +318,12 @@ a:hover, button:hover {
     font-weight: 700;
 }
 
+
 @media (min-width: 768px) {
     .feature__title {
-        text-align: center;
+        text-align: left;
         font-size: 2.375rem;
+        padding-top: 8px;
     }
 }
 
@@ -302,8 +334,24 @@ a:hover, button:hover {
     font-weight: 600;
 }
 
-.feature__description{
+@media (min-width: 768px) {
+    .feature__title--japanese {
+        text-align: left;
+        font-size: 24px;
+        padding-top: 15px;
+    }
+}
+
+.feature__description {
     font-size: calc(14/390*100vw);
     line-height: calc(32/14);
     padding-top: calc(16/390 *100vw);
+}
+
+@media (min-width: 768px) {
+    .feature__description {
+        text-align: left;
+        font-size: 14px;
+        padding-top: 20px;
+    }
 }

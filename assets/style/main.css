@@ -1,0 +1,184 @@
+@charset "UTF-8";
+
+/* ベースのスタイル
+---------------------------------------------- */
+
+body {
+    font-family: "Noto Serif", serif;
+    font-weight: 400;
+    line-height: 1.2;
+    color: #000;
+}
+
+img {
+    width: 100%;
+    height: auto;
+}
+
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+a:hover, button:hover {
+    opacity: .6;
+}
+
+
+/* 部品
+------------------------------------- */
+
+.contents-width {
+    max-width: 75rem;
+    margin: 0 auto;
+}
+
+@media (max-width: 767px) {
+    .contents-width {
+        padding: 1rem;
+    }
+}
+
+.flex {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.marcellus {
+    font-family: "Marcellus", serif;
+}
+
+.eb-garamond {
+    font-family: "EB Garamond", serif;
+}
+
+/* トップ（メインビジュアル）
+------------------------------------- */
+
+.top {
+    position: relative;
+    height: calc(557 / 390 * 100vw);
+    margin-bottom: calc(32 / 390 * 100vw);;
+}
+
+.company-logo {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    margin: calc(30 / 390 * 100vw) auto 0;
+    width: calc(143 / 390 * 100vw);
+}
+
+.main-visual {
+    position: relative;
+    height: 115vw;
+    overflow: hidden;
+}
+
+@media (min-width: 768px) {
+    .main-visual {
+        height: 45rem;
+    }
+}
+
+.main-visual::before {
+    position: absolute;
+    z-index: -1;
+    display: block;
+    width: 100vw;
+    height: 100%;
+    content: "";
+    background-image: url("/assets/image/main_visual.jpg");
+    background-repeat: no-repeat;
+    background-position: -86vw -36vw;
+    background-size: 253vw;
+}
+
+@media (min-width: 768px) {
+    .main-visual::before {}
+}
+
+.title {
+    position: absolute;
+    top: 107vw;
+    padding-left: calc(24 / 390 * 100vw);
+}
+
+.title-product-name {
+    font-size: calc(41 / 390 * 100vw);
+    line-height: calc(51/41);
+    letter-spacing: calc(12.16/390 *100vw);
+    font-weight: 400;
+}
+
+.title-catch {
+    margin-top: 0.5rem;
+    font-size: calc(20 / 390 * 100vw);
+    line-height: calc(29/20);
+    letter-spacing: calc(5.92/390 *100vw);
+}
+
+
+/* ショッピング
+------------------------------------- */
+.shopping {
+    margin-bottom: calc(35.2 / 390 * 100vw);
+    line-height: calc(26/18);
+}
+
+.shopping__background {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #F0F4FF;
+}
+
+
+@media (max-width: 767px) {
+    .shopping__background {
+        flex-direction: column;
+        row-gap: calc(20 / 390 * 100vw);
+        padding-top: calc(22/ 390 * 100vw);
+        padding-bottom: calc(34/ 390 * 100vw);
+    }
+}
+
+.shopping__product {
+    text-align: center;
+}
+
+.shopping__product-name {
+    font-size: calc(18 / 390 * 100vw);
+    letter-spacing: .1rem;
+    margin-bottom: calc(5/ 390 * 100vw);
+}
+
+.shopping__product-price {
+    font-size: calc(14 / 390 * 100vw);
+    line-height: calc(20/14);
+    letter-spacing: .07rem;
+}
+
+.shopping__button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 83.8%;
+    height: calc(58 / 390 * 100vw);
+    font-size: calc(18 / 390 * 100vw);
+    color: #fff;
+    font-weight: 600;
+    border-radius: 34px;
+}
+
+.shopping__button--online {
+    background-color: #46C4DB;
+}
+
+.shopping__button--purchase {
+    background-color: #5DD5AB;
+}

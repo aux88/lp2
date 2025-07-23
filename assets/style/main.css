@@ -287,12 +287,12 @@ a:hover, button:hover {
     .feature {
         display: flex;
         height: 550px;
-background-position: 100% 54%;
+        background-position: 100% 54%;
         background-size: 135.8vw;
         align-items: center;
     }
 
-    .feature-container {
+    .feature__container {
         display: flex;
         width: 100%;
         flex-direction: row;
@@ -300,13 +300,13 @@ background-position: 100% 54%;
     }
 }
 
-.feature__textbox {
+.feature__text-block {
     color: #fff;
     padding-top: calc(35.2/390*100vw);
 }
 
 @media (min-width: 768px) {
-    .feature__textbox {
+    .feature__text-block {
         padding-top: 0rem;
         width: 420px;
     }
@@ -354,4 +354,95 @@ background-position: 100% 54%;
         font-size: 14px;
         padding-top: 20px;
     }
+}
+
+/* お客様の声
+------------------------------------- */
+
+.voices {
+    padding-top: 51.5px;
+}
+
+
+.voices__title {
+    text-align: center;
+    font-size: calc(30/390*100vw);
+    font-weight: 700;
+    letter-spacing: calc(1.6/390*100vw);
+}
+
+
+@media (min-width: 768px) {
+    .voices__title {
+        font-size: 2.8125rem;
+        padding-top: 8px;
+    }
+}
+
+.voices__title--japanese {
+    font-size: calc(16/390*100vw);
+    padding-top: calc(9/390 *100vw);
+    font-weight: 600;
+    letter-spacing: 0;
+}
+
+@media (min-width: 768px) {
+    .voices__title--japanese {
+        font-size: 20px;
+        padding-top: 15px;
+    }
+}
+
+.voices__item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: calc(344/390*100vw);
+    width: calc(280/390*100vw);
+    background-color: #DBF7F9;
+    margin: calc(36/390*100vw) auto;
+    padding: calc(28/390*100vw) calc(17/390*100vw) 0 calc(15/390*100vw);
+}
+
+.voices__icon {
+    margin-left: calc(12.8/390*100vw);
+    width: calc(80/390*100vw);
+    height: calc(80/390*100vw);
+    /* トリミング枠の幅 */
+    aspect-ratio: 1;
+    /*トリミング枠の縦横比*/
+    overflow: hidden;
+    border-radius: 50%;
+}
+
+@media(min-width: 768px) {
+    .voices__icon {
+        width: 100px;
+        height: 100px;
+        aspect-ratio: 560 / 346;
+    }
+}
+
+.voices__image {
+    display: block;
+    object-fit: cover;
+    object-position: left top;
+}
+
+.voices__item:nth-of-type(1) .voices__image {
+    /* 画像に合わせて拡大縮小、トリミング位置をそれぞれ設定 */
+    transform: scale(3);
+    object-position: calc(-25.6/390*100vw) calc(16/390*100vw);
+}
+
+.voices__name {
+    font-size: calc(14/390*100vw);
+    font-weight: 400;
+    margin-top: calc(12.8/390*100vw);
+}
+
+.voices__comment {
+    font-size: calc(14/390*100vw);
+    line-height: calc(28/14);
+    margin-top: calc(16/390*100vw);
 }

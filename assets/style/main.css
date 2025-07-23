@@ -360,9 +360,14 @@ a:hover, button:hover {
 ------------------------------------- */
 
 .voices {
-    padding-top: 51.5px;
+    padding-top: calc(51.5/390*100vw);
 }
 
+@media (min-width: 768px) {
+    .voices {
+        padding-top: 4.5rem;
+    }
+}
 
 .voices__title {
     text-align: center;
@@ -371,11 +376,11 @@ a:hover, button:hover {
     letter-spacing: calc(1.6/390*100vw);
 }
 
-
 @media (min-width: 768px) {
     .voices__title {
         font-size: 2.8125rem;
         padding-top: 8px;
+        letter-spacing: 0.1rem;
     }
 }
 
@@ -394,19 +399,27 @@ a:hover, button:hover {
 }
 
 .voices__item {
+    box-sizing: border-box;
     display: flex;
     flex-direction: column;
     align-items: center;
     height: calc(344/390*100vw);
     width: calc(280/390*100vw);
     background-color: #DBF7F9;
-    margin: calc(36/390*100vw) auto;
+    margin: 0 auto;
+    padding: calc(28/390*100vw) calc(17/390*100vw) 0 calc(15/390*100vw);
+}
+
+@media (min-width: 768px) {
+    .voices__item {
+        height: 388px;
+        width: 300px;
+        padding: 40px 18px 0px 16px;
+    }
 }
 
 .voices__icon {
     margin-left: calc(12.8/390*100vw);
-    margin-top: calc(28/390*100vw);
-
     width: calc(80/390*100vw);
     height: calc(80/390*100vw);
     /* トリミング枠の幅 */
@@ -418,9 +431,10 @@ a:hover, button:hover {
 
 @media(min-width: 768px) {
     .voices__icon {
+        margin-left: 0px;
+        margin-top: 0px;
         width: 100px;
         height: 100px;
-        aspect-ratio: 560 / 346;
     }
 }
 
@@ -433,6 +447,13 @@ a:hover, button:hover {
 .voices__image--a {
     transform: scale(3);
     object-position: calc(-25.6/390*100vw) calc(16/390*100vw);
+}
+
+@media(min-width: 768px) {
+    .voices__image--a {
+        transform: scale(3);
+        object-position: -31px 19px;
+    }
 }
 
 .voices__image--b {
@@ -466,22 +487,60 @@ a:hover, button:hover {
     margin-top: calc(12.8/390*100vw);
 }
 
+@media (min-width: 768px) {
+    .voices__name {
+        font-size: 15px;
+        margin-top: 12px;
+    }
+}
+
 .voices__comment {
     font-size: calc(14/390*100vw);
     line-height: calc(28/14);
     margin-top: calc(16/390*100vw);
-    margin-right: calc(17/390*100vw);
-    margin-left: calc(15/390*100vw);
+}
+
+@media (min-width: 768px) {
+    .voices__comment {
+        font-size: 1rem;
+        line-height: calc(28/16);
+        margin-top: 1rem;
+    }
+}
+
+.swiper__container {
+    margin: calc(36/390*100vw) auto;
+    height: calc(344/390*100vw);
+    width: calc(280/390*100vw);
+    position: relative;
+}
+
+
+@media (min-width: 768px) {
+    .swiper__container {
+        max-width: 980px;
+        margin: 40px auto;
+        height: 388px;
+    }
 }
 
 /* Swiper */
 .swiper-button-next,
-.swiper-button-prev,
-.swiper-pagination {
+.swiper-button-prev {
     top: 51.8%;
     width: calc(32/390*100vw);
     height: calc(32/390*100vw);
     background-size: contain;
+}
+
+@media (min-width: 768px) {
+
+    .swiper-button-next,
+    .swiper-button-prev {
+        top: 49.8%;
+        width: 48px;
+        height: 48px;
+    }
 }
 
 .swiper-button-next::after,
@@ -491,14 +550,25 @@ a:hover, button:hover {
 
 .swiper-button-prev {
     background-image: url(../image/arrow-left-circle-fill.png);
-    left: calc(16/390*100vw)
+    left: calc(-39/390*100vw)
+}
+
+@media (min-width: 768px) {
+    .swiper-button-prev {
+      left: -88px;
+    }
 }
 
 .swiper-button-next {
     background-image: url(../image/arrow-right-circle-fill.png);
-    right: calc(16/390*100vw);
+    right: calc(-39/390*100vw);
 }
 
+@media (min-width: 768px) {
+    .swiper-button-next {
+        right: -88px;
+    }
+}
 
 .swiper-pagination-bullet {
     background-color: #EEE;
@@ -507,10 +577,23 @@ a:hover, button:hover {
     opacity: 1;
 }
 
+@media (min-width: 768px) {
+    .swiper-pagination-bullet {
+    height: 9px;
+    width: 9px;
+}
+}
+
 .swiper-pagination-bullet-active {
     background-color: #00AFBF;
 }
 
 .swiper-pagination {
-    bottom: calc(-6/390*100vw)!important;
+    bottom: calc(-31/390*100vw) !important;
+}
+
+@media (min-width: 768px) {
+    .swiper-pagination {
+        bottom: -39px !important;
+    }
 }

@@ -401,11 +401,12 @@ a:hover, button:hover {
     width: calc(280/390*100vw);
     background-color: #DBF7F9;
     margin: calc(36/390*100vw) auto;
-    padding: calc(28/390*100vw) calc(17/390*100vw) 0 calc(15/390*100vw);
 }
 
 .voices__icon {
     margin-left: calc(12.8/390*100vw);
+    margin-top: calc(28/390*100vw);
+
     width: calc(80/390*100vw);
     height: calc(80/390*100vw);
     /* トリミング枠の幅 */
@@ -429,10 +430,34 @@ a:hover, button:hover {
     object-position: left top;
 }
 
-.voices__item:nth-of-type(1) .voices__image {
-    /* 画像に合わせて拡大縮小、トリミング位置をそれぞれ設定 */
+.voices__image--a {
     transform: scale(3);
     object-position: calc(-25.6/390*100vw) calc(16/390*100vw);
+}
+
+.voices__image--b {
+    transform: scale(1.6);
+    object-position: calc(2.4 / 390 * 100vw) calc(17 / 390 * 100vw);
+}
+
+.voices__image--c {
+    transform: scale(1.7);
+    object-position: calc(-5.6 / 390 * 100vw) calc(16 / 390 * 100vw);
+}
+
+.voices__image--d {
+    transform: scale(1.1);
+    object-position: calc(0.4 / 390 * 100vw) calc(-3 / 390 * 100vw);
+}
+
+.voices__image--e {
+    transform: scale(1.1);
+    object-position: calc(0.4 / 390 * 100vw) calc(-6 / 390 * 100vw);
+}
+
+.voices__image--f {
+    transform: scale(1.5);
+    object-position: calc(-1.6 / 390 * 100vw) calc(14.5 / 390 * 100vw);
 }
 
 .voices__name {
@@ -445,4 +470,47 @@ a:hover, button:hover {
     font-size: calc(14/390*100vw);
     line-height: calc(28/14);
     margin-top: calc(16/390*100vw);
+    margin-right: calc(17/390*100vw);
+    margin-left: calc(15/390*100vw);
+}
+
+/* Swiper */
+.swiper-button-next,
+.swiper-button-prev,
+.swiper-pagination {
+    top: 51.8%;
+    width: calc(32/390*100vw);
+    height: calc(32/390*100vw);
+    background-size: contain;
+}
+
+.swiper-button-next::after,
+.swiper-button-prev::after {
+    content: '';
+}
+
+.swiper-button-prev {
+    background-image: url(../image/arrow-left-circle-fill.png);
+    left: calc(16/390*100vw)
+}
+
+.swiper-button-next {
+    background-image: url(../image/arrow-right-circle-fill.png);
+    right: calc(16/390*100vw);
+}
+
+
+.swiper-pagination-bullet {
+    background-color: #EEE;
+    height: calc(9/390*100vw);
+    width: calc(9/390*100vw);
+    opacity: 1;
+}
+
+.swiper-pagination-bullet-active {
+    background-color: #00AFBF;
+}
+
+.swiper-pagination {
+    bottom: calc(-6/390*100vw)!important;
 }

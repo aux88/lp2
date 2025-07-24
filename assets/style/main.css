@@ -23,8 +23,8 @@ ul {
 }
 
 a {
-    text-decoration: none;
     color: #fff;
+    text-decoration: none;
 }
 
 a:hover, button:hover {
@@ -36,9 +36,9 @@ a:hover, button:hover {
 ------------------------------------- */
 
 .contents-width {
-    margin: 0 auto;
     max-width: 1032px;
     padding: 0 1rem;
+    margin: 0 auto;
 }
 
 @media (max-width: 767px) {
@@ -54,7 +54,7 @@ a:hover, button:hover {
 }
 
 .marcellus {
-    font-family: "Marcellus", serif;
+    font-family: Marcellus, serif;
 }
 
 .eb-garamond {
@@ -82,15 +82,15 @@ a:hover, button:hover {
 .company-logo {
     display: flex;
     justify-content: center;
-    text-align: center;
-    margin: calc(30 / 390 * 100vw) auto 0;
     width: calc(143 / 390 * 100vw);
+    margin: calc(30 / 390 * 100vw) auto 0;
+    text-align: center;
 }
 
 @media (min-width: 768px) {
     .company-logo {
-        margin: calc(38 / 1500 * 100vw) auto 0;
         width: calc(166 / 1500 * 100vw);
+        margin: calc(38 / 1500 * 100vw) auto 0;
     }
 }
 
@@ -141,9 +141,9 @@ a:hover, button:hover {
 
 .title-product-name {
     font-size: calc(41 / 390 * 100vw);
+    font-weight: 400;
     line-height: calc(51/41);
     letter-spacing: calc(12.16/390 *100vw);
-    font-weight: 400;
 }
 
 @media (min-width: 768px) {
@@ -184,23 +184,23 @@ a:hover, button:hover {
 
 .shopping__background {
     display: flex;
-    align-items: center;
     flex-direction: column;
-    background-color: #F0F4FF;
     row-gap: calc(20 / 390 * 100vw);
+    align-items: center;
     padding-top: calc(22/ 390 * 100vw);
     padding-bottom: calc(34/ 390 * 100vw);
+    background-color: #F0F4FF;
 }
 
 @media (min-width: 768px) {
     .shopping__background {
         flex-direction: row;
-        max-width: 1000px;
-        margin: 0 auto;
-        padding: 0 calc(48/1500 *100vw);
-        height: 146px;
         column-gap: calc(32 /1500 *100vw);
         justify-content: center;
+        max-width: 1000px;
+        height: 146px;
+        padding: 0 calc(48/1500 *100vw);
+        margin: 0 auto;
     }
 }
 
@@ -210,24 +210,24 @@ a:hover, button:hover {
 
 @media (min-width: 768px) {
     .shopping__product {
-        text-align: left;
         width: 240px;
         min-width: 220px;
+        text-align: left;
     }
 }
 
 .shopping__product-name {
+    margin-bottom: calc(4.8/390 *100vw);
     font-size: calc(18 / 390 * 100vw);
     letter-spacing: .1rem;
-    margin-bottom: calc(4.8/390 *100vw);
 }
 
 @media (min-width: 768px) {
     .shopping__product-name {
-        font-size: 24px;
-        letter-spacing: .15rem;
         padding-top: 0.3rem;
         margin-bottom: 0;
+        font-size: 24px;
+        letter-spacing: .15rem;
     }
 }
 
@@ -239,10 +239,10 @@ a:hover, button:hover {
 
 @media (min-width: 768px) {
     .shopping__product-price {
+        padding-top: 0.3rem;
         font-size: 16px;
         line-height: calc(20/14);
         letter-spacing: .07rem;
-        padding-top: 0.3rem;
     }
 }
 
@@ -253,15 +253,15 @@ a:hover, button:hover {
     width: 83.8%;
     height: calc(58 / 390 * 100vw);
     font-size: calc(18 / 390 * 100vw);
-    color: #fff;
     font-weight: 600;
+    color: #fff;
     border-radius: calc(34/390*100vw);
 }
 
 @media (min-width: 768px) {
     .shopping__button {
-        max-width: 300px;
         min-width: 220px;
+        max-width: 300px;
         max-height: 58px;
         font-size: 1.125rem;
         color: #fff;
@@ -283,80 +283,80 @@ a:hover, button:hover {
     height: calc(680/390 *100vw);
     background-image: url("/assets/image/pmv_chamara.jpg");
     background-repeat: no-repeat;
-    background-position: -116vw 0vw;
+    background-position: -116vw 0;
     background-size: 327.5vw;
 }
 
 @media (min-width: 768px) {
     .feature {
         display: flex;
+        align-items: center;
         height: 550px;
         background-position: 100% 54%;
         background-size: 135.8vw;
-        align-items: center;
     }
 
     .feature__container {
         display: flex;
-        width: 100%;
         flex-direction: row;
         justify-content: flex-end;
+        width: 100%;
     }
 }
 
 .feature__text-block {
-    color: #fff;
     padding-top: calc(35.2/390*100vw);
+    color: #fff;
 }
 
 @media (min-width: 768px) {
     .feature__text-block {
-        padding-top: 0rem;
         width: 420px;
+        padding-top: 0;
     }
 }
 
 .feature__title {
-    text-align: center;
     font-size: calc(30/390*100vw);
     font-weight: 700;
+    text-align: center;
 }
 
 
 @media (min-width: 768px) {
     .feature__title {
-        text-align: left;
-        font-size: 2.375rem;
         padding-top: 8px;
+        font-size: 2.375rem;
+        text-align: left;
     }
 }
 
 .feature__title--japanese {
-    text-align: center;
-    font-size: calc(24/390*100vw);
     padding-top: calc(14.4/390 *100vw);
+    font-size: calc(24/390*100vw);
     font-weight: 600;
+    text-align: center;
 }
 
 @media (min-width: 768px) {
     .feature__title--japanese {
-        text-align: left;
-        font-size: 24px;
         padding-top: 15px;
+        font-size: 24px;
+        text-align: left;
     }
 }
 
 .feature__description {
+    padding-top: calc(16/390 *100vw);
     font-size: calc(14/390*100vw);
     line-height: calc(32/14);
-    padding-top: calc(16/390 *100vw);
 }
 
 @media (min-width: 768px) {
     .feature__description {
-        text-align: left;
-        font-size: 14px;
         padding-top: 20px;
+        font-size: 14px;
+        text-align: left;
     }
 }
 
@@ -376,31 +376,31 @@ a:hover, button:hover {
 }
 
 .voices__title {
-    text-align: center;
     font-size: calc(30/390*100vw);
     font-weight: 700;
+    text-align: center;
     letter-spacing: calc(1.6/390*100vw);
 }
 
 @media (min-width: 768px) {
     .voices__title {
-        font-size: 2.8125rem;
         padding-top: 8px;
+        font-size: 2.8125rem;
         letter-spacing: 0.1rem;
     }
 }
 
 .voices__title--japanese {
-    font-size: calc(16/390*100vw);
     padding-top: calc(9/390 *100vw);
+    font-size: calc(16/390*100vw);
     font-weight: 600;
     letter-spacing: 0;
 }
 
 @media (min-width: 768px) {
     .voices__title--japanese {
-        font-size: 20px;
         padding-top: 15px;
+        font-size: 20px;
     }
 }
 
@@ -409,38 +409,40 @@ a:hover, button:hover {
     display: flex;
     flex-direction: column;
     align-items: center;
-    height: calc(344/390*100vw);
     width: calc(280/390*100vw);
-    background-color: #DBF7F9;
-    margin: 0 auto;
+    height: calc(344/390*100vw);
     padding: calc(28/390*100vw) calc(17/390*100vw) 0 calc(15/390*100vw);
+    margin: 0 auto;
+    background-color: #DBF7F9;
 }
 
 @media (min-width: 768px) {
     .voices__item {
-        height: 388px;
         width: 300px;
-        padding: 40px 18px 0px 16px;
+        height: 388px;
+        padding: 40px 18px 0 16px;
     }
 }
 
 .voices__icon {
-    margin-left: calc(12.8/390*100vw);
     width: calc(80/390*100vw);
     height: calc(80/390*100vw);
+
     /* トリミング枠の幅 */
     aspect-ratio: 1;
-    /*トリミング枠の縦横比*/
+    margin-left: calc(12.8/390*100vw);
+
+    /* トリミング枠の縦横比 */
     overflow: hidden;
     border-radius: 50%;
 }
 
 @media(min-width: 768px) {
     .voices__icon {
-        margin-left: 0px;
-        margin-top: 0px;
         width: 100px;
         height: 100px;
+        margin-top: 0;
+        margin-left: 0;
     }
 }
 
@@ -451,82 +453,82 @@ a:hover, button:hover {
 }
 
 .voices__image--a {
-    transform: scale(3);
     object-position: calc(-25.6/390*100vw) calc(16/390*100vw);
+    transform: scale(3);
 }
 
 @media(min-width: 768px) {
     .voices__image--a {
-        transform: scale(3);
         object-position: -31px 19px;
+        transform: scale(3);
     }
 }
 
 .voices__image--b {
-    transform: scale(1.6);
     object-position: calc(2.4 / 390 * 100vw) calc(17 / 390 * 100vw);
+    transform: scale(1.6);
 }
 
 .voices__image--c {
-    transform: scale(1.7);
     object-position: calc(-5.6 / 390 * 100vw) calc(16 / 390 * 100vw);
+    transform: scale(1.7);
 }
 
 .voices__image--d {
-    transform: scale(1.1);
     object-position: calc(0.4 / 390 * 100vw) calc(-3 / 390 * 100vw);
+    transform: scale(1.1);
 }
 
 .voices__image--e {
-    transform: scale(1.1);
     object-position: calc(0.4 / 390 * 100vw) calc(-6 / 390 * 100vw);
+    transform: scale(1.1);
 }
 
 .voices__image--f {
-    transform: scale(1.5);
     object-position: calc(-1.6 / 390 * 100vw) calc(14.5 / 390 * 100vw);
+    transform: scale(1.5);
 }
 
 .voices__name {
+    margin-top: calc(12.8/390*100vw);
     font-size: calc(14/390*100vw);
     font-weight: 400;
-    margin-top: calc(12.8/390*100vw);
 }
 
 @media (min-width: 768px) {
     .voices__name {
-        font-size: 15px;
         margin-top: 12px;
+        font-size: 15px;
     }
 }
 
 .voices__comment {
+    margin-top: calc(16/390*100vw);
     font-size: calc(14/390*100vw);
     line-height: calc(28/14);
-    margin-top: calc(16/390*100vw);
 }
 
 @media (min-width: 768px) {
     .voices__comment {
+        margin-top: 1rem;
         font-size: 1rem;
         line-height: calc(28/16);
-        margin-top: 1rem;
     }
 }
 
 .swiper__container {
-    margin: calc(36/390*100vw) auto;
-    height: calc(344/390*100vw);
-    width: calc(280/390*100vw);
     position: relative;
+    width: calc(280/390*100vw);
+    height: calc(344/390*100vw);
+    margin: calc(36/390*100vw) auto;
 }
 
 
 @media (min-width: 768px) {
     .swiper__container {
         max-width: 980px;
-        margin: 40px auto;
         height: 388px;
+        margin: 40px auto;
     }
 }
 
@@ -540,7 +542,6 @@ a:hover, button:hover {
 }
 
 @media (min-width: 768px) {
-
     .swiper-button-next,
     .swiper-button-prev {
         top: 49.8%;
@@ -555,8 +556,8 @@ a:hover, button:hover {
 }
 
 .swiper-button-prev {
-    background-image: url(../image/arrow-left-circle-fill.png);
-    left: calc(-39/390*100vw)
+    left: calc(-39/390*100vw);
+    background-image: url("../image/arrow-left-circle-fill.png")
 }
 
 @media (min-width: 768px) {
@@ -566,8 +567,8 @@ a:hover, button:hover {
 }
 
 .swiper-button-next {
-    background-image: url(../image/arrow-right-circle-fill.png);
     right: calc(-39/390*100vw);
+    background-image: url("../image/arrow-right-circle-fill.png");
 }
 
 @media (min-width: 768px) {
@@ -577,16 +578,16 @@ a:hover, button:hover {
 }
 
 .swiper-pagination-bullet {
-    background-color: #EEE;
-    height: calc(9/390*100vw);
     width: calc(9/390*100vw);
+    height: calc(9/390*100vw);
+    background-color: #EEE;
     opacity: 1;
 }
 
 @media (min-width: 768px) {
     .swiper-pagination-bullet {
-        height: 9px;
         width: 9px;
+        height: 9px;
     }
 }
 
@@ -608,9 +609,9 @@ a:hover, button:hover {
 ------------------------------------- */
 
 .faq {
-    background: linear-gradient(90deg, #F4FFE8, #C6F0FE);
     padding-top: calc(17.6/390*100vw);
     margin-bottom: 1.8rem;
+    background: linear-gradient(90deg, #F4FFE8, #C6F0FE);
 }
 
 @media (min-width: 768px) {
@@ -622,33 +623,33 @@ a:hover, button:hover {
 }
 
 .faq__title {
-    text-align: center;
     font-size: calc(30/390*100vw);
     font-weight: 700;
+    text-align: center;
     letter-spacing: calc(1.6/390*100vw);
 }
 
 @media (min-width: 768px) {
     .faq__title {
-        font-size: 2.8125rem;
         padding-top: 8px;
+        font-size: 2.8125rem;
         letter-spacing: 0.1rem;
     }
 }
 
 .faq__title--japanese {
-    font-size: calc(16/390*100vw);
     padding-top: calc(9/390 *100vw);
     padding-bottom: calc(17/390 * 100vw);
+    font-size: calc(16/390*100vw);
     font-weight: 600;
     letter-spacing: 0;
 }
 
 @media (min-width: 768px) {
     .faq__title--japanese {
-        font-size: 20px;
         padding-top: 15px;
         padding-bottom: 22px;
+        font-size: 20px;
     }
 }
 
@@ -660,10 +661,10 @@ a:hover, button:hover {
 }
 
 .faq__item {
-    background-color: #fff;
-    margin: 20px auto;
     padding: 16px;
+    margin: 20px auto;
     font-size: 15px;
+    background-color: #fff;
 }
 
 
@@ -681,7 +682,6 @@ a:hover, button:hover {
 }
 
 @media (min-width: 768px) {
-
     .faq__question,
     .faq__answer {
         padding-left: 38px;
@@ -691,8 +691,8 @@ a:hover, button:hover {
 /* アコーディオンの質問部分のみ */
 .faq__question {
     position: relative;
-    color: #444;
     padding-right: 16px;
+    color: #444;
 }
 
 @media (min-width: 768px) {
@@ -704,9 +704,9 @@ a:hover, button:hover {
 /* アコーディオンの回答部分 */
 .faq__answer {
     display: none;
-    color: #000;
     margin-top: 0.6rem;
     margin-bottom: 0.6rem;
+    color: #000;
 }
 
 @media (min-width: 768px) {
@@ -725,14 +725,13 @@ a:hover, button:hover {
 
 .faq__question::before,
 .faq__answer::before {
+    display: inline-block;
     font-family: "EB Garamond", serif;
     font-size: 16px;
-    display: inline-block;
     text-indent: -1.8rem;
 }
 
 @media (min-width: 768px) {
-
     .faq__question::before,
     .faq__answer::before {
         font-size: 18px;
@@ -770,9 +769,9 @@ a:hover, button:hover {
     position: relative;
     display: flex;
     flex-direction: column;
-    margin: 0 auto;
-    padding-top: calc(30/390*100vw);
     max-width: calc(358/390*100vw);
+    padding-top: calc(30/390*100vw);
+    margin: 0 auto;
 }
 
 @media (min-width: 768px) {
@@ -796,13 +795,13 @@ a:hover, button:hover {
 
 @media (min-width: 768px) {
     .footer__logo {
-        margin: 0;
         padding-left: 32px;
+        margin: 0;
     }
 
     .footer__logo__image {
-        max-width: 190px;
         min-width: 120px;
+        max-width: 190px;
     }
 }
 
@@ -810,63 +809,63 @@ a:hover, button:hover {
 @media (min-width: 768px) {
     .footer__nav {
         display: flex;
-        width: 700px;
         justify-content: flex-end;
+        width: 700px;
         min-width: 366px;
     }
 }
 
 .footer__list {
     display: flex;
-    justify-content: center;
-    gap: calc(30 / 390 * 100vw);
     flex-wrap: wrap;
+    gap: calc(30 / 390 * 100vw);
+    justify-content: center;
     font-size: max(12px, calc(12/390 * 100vw));
 }
 
 @media (min-width: 768px) {
     .footer__list {
-        width: 637px;
         gap: 32px;
+        width: 637px;
         font-size: 14px;
     }
 }
 
 .footer__copyright {
     margin: calc(29/390*100vw) auto calc(23/390*100vw);
-    color: #fff;
     font-size: max(11px, calc(11/390 * 100vw));
+    color: #fff;
 }
 
 @media (min-width: 768px) {
     .footer__copyright {
+        min-width: 238px;
         margin: 4px 8px 0;
         font-size: 12px;
         line-height: calc(17/12);
-        min-width: 238px;
     }
 }
 
 .pagetop {
-    height: calc(40/390 *100vw);
-    width: calc(40/390 *100vw);
     position: absolute;
     top: calc(-40/390 *100vw);
     right: 0;
-    background: #0071CE;
-    display: flex;
-    justify-content: center;
-    align-items: center;
     z-index: 2;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: calc(40/390 *100vw);
+    height: calc(40/390 *100vw);
     font-size: calc(32/390 *100vw);
+    background: #0071CE;
 }
 
 @media (min-width: 768px) {
     .pagetop {
-        height: 40px;
-        width: 40px;
-        font-size: 2rem;
         top: -40px;
         right: 0;
+        width: 40px;
+        height: 40px;
+        font-size: 2rem;
     }
 }

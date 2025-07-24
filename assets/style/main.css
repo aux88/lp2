@@ -2,6 +2,9 @@
 
 /* ベースのスタイル
 ---------------------------------------------- */
+html {
+    scroll-behavior: smooth;
+}
 
 body {
     font-family: "Noto Serif", serif;
@@ -764,10 +767,12 @@ a:hover, button:hover {
 }
 
 .footer-container {
+    position: relative;
     display: flex;
     flex-direction: column;
     margin: 0 auto;
     padding-top: calc(30/390*100vw);
+    max-width: calc(358/390*100vw);
 }
 
 @media (min-width: 768px) {
@@ -776,7 +781,7 @@ a:hover, button:hover {
         align-items: center;
         max-width: 1200px;
         padding-top: 40px;
-        padding-bottom:40px;
+        padding-bottom: 40px;
     }
 }
 
@@ -791,7 +796,7 @@ a:hover, button:hover {
 
 @media (min-width: 768px) {
     .footer__logo {
-        margin:0;
+        margin: 0;
         padding-left: 32px;
     }
 
@@ -839,5 +844,29 @@ a:hover, button:hover {
         font-size: 12px;
         line-height: calc(17/12);
         min-width: 238px;
+    }
+}
+
+.pagetop {
+    height: calc(40/390 *100vw);
+    width: calc(40/390 *100vw);
+    position: absolute;
+    top: calc(-40/390 *100vw);
+    right: 0;
+    background: #0071CE;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 2;
+    font-size: calc(32/390 *100vw);
+}
+
+@media (min-width: 768px) {
+    .pagetop {
+        height: 40px;
+        width: 40px;
+        font-size: 2rem;
+        top: -40px;
+        right: 0;
     }
 }

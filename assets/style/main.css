@@ -409,18 +409,24 @@ a:hover, button:hover {
     display: flex;
     flex-direction: column;
     align-items: center;
-    width: calc(280/390*100vw);
-    height: calc(344/390*100vw);
     padding: calc(28/390*100vw) calc(17/390*100vw) 0 calc(15/390*100vw);
     margin: 0 auto;
     background-color: #DBF7F9;
 }
 
+@media (max-width: 767px) {
+    .voices__item {
+        width: calc(280/390*100vw);
+        height: calc(344/390*100vw);
+    }
+}
+
 @media (min-width: 768px) {
     .voices__item {
-        width: 300px;
+        max-width: 300px;
         height: 388px;
         padding: 40px 18px 0 16px;
+        overflow: auto;
     }
 }
 
@@ -441,6 +447,7 @@ a:hover, button:hover {
     .voices__icon {
         width: 100px;
         height: 100px;
+        min-height: 100px;
         margin-top: 0;
         margin-left: 0;
     }
@@ -469,14 +476,35 @@ a:hover, button:hover {
     transform: scale(1.6);
 }
 
+@media(min-width: 768px) {
+    .voices__image--b {
+        object-position: 3px 23px;
+        transform: scale(1.6);
+    }
+}
+
 .voices__image--c {
-    object-position: calc(-5.6 / 390 * 100vw) calc(16 / 390 * 100vw);
+    object-position: calc(-4.6 / 390 * 100vw) calc(18 / 390 * 100vw);
     transform: scale(1.7);
 }
 
+@media(min-width: 768px) {
+    .voices__image--c {
+        object-position: -6px 23px;
+        transform: scale(1.6)
+    }
+}
+
 .voices__image--d {
-    object-position: calc(0.4 / 390 * 100vw) calc(-3 / 390 * 100vw);
+    object-position: calc(-0.5 / 390 * 100vw) calc(-2 / 390 * 100vw);
     transform: scale(1.1);
+}
+
+@media(min-width: 768px) {
+    .voices__image--d {
+        object-position: 2px -4px;
+        transform: scale(1.1);
+    }
 }
 
 .voices__image--e {
@@ -484,9 +512,23 @@ a:hover, button:hover {
     transform: scale(1.1);
 }
 
+@media(min-width: 768px) {
+    .voices__image--e {
+        object-position: 0 -9px;
+        transform: scale(1.0);
+    }
+}
+
 .voices__image--f {
     object-position: calc(-1.6 / 390 * 100vw) calc(14.5 / 390 * 100vw);
     transform: scale(1.5);
+}
+
+@media(min-width: 768px) {
+    .voices__image--f {
+        object-position: -3px 18px;
+        transform: scale(1.5);
+    }
 }
 
 .voices__name {

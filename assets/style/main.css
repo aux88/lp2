@@ -21,6 +21,7 @@ ul {
 
 a {
     text-decoration: none;
+    color: #fff;
 }
 
 a:hover, button:hover {
@@ -600,7 +601,6 @@ a:hover, button:hover {
     }
 }
 
-
 /* よくあるご質問
 ------------------------------------- */
 
@@ -754,5 +754,90 @@ a:hover, button:hover {
         top: 0;
         right: 0.2rem;
         font-size: 1.2rem;
+    }
+}
+
+/* フッター
+------------------------------------- */
+.footer {
+    background-color: #0071CE;
+}
+
+.footer-container {
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+    padding-top: calc(30/390*100vw);
+}
+
+@media (min-width: 768px) {
+    .footer-container {
+        flex-direction: row;
+        align-items: center;
+        max-width: 1200px;
+        padding-top: 40px;
+        padding-bottom:40px;
+    }
+}
+
+.footer__logo {
+    margin: 0 auto;
+    margin-bottom: calc(30/390*100vw);
+}
+
+.footer__logo__image {
+    max-width: calc(166/390*100vw);
+}
+
+@media (min-width: 768px) {
+    .footer__logo {
+        margin:0;
+        padding-left: 32px;
+    }
+
+    .footer__logo__image {
+        max-width: 190px;
+        min-width: 120px;
+    }
+}
+
+
+@media (min-width: 768px) {
+    .footer__nav {
+        display: flex;
+        width: 700px;
+        justify-content: flex-end;
+        min-width: 366px;
+    }
+}
+
+.footer__list {
+    display: flex;
+    justify-content: center;
+    gap: calc(30 / 390 * 100vw);
+    flex-wrap: wrap;
+    font-size: max(12px, calc(12/390 * 100vw));
+}
+
+@media (min-width: 768px) {
+    .footer__list {
+        width: 637px;
+        gap: 32px;
+        font-size: 14px;
+    }
+}
+
+.footer__copyright {
+    margin: calc(29/390*100vw) auto calc(23/390*100vw);
+    color: #fff;
+    font-size: max(11px, calc(11/390 * 100vw));
+}
+
+@media (min-width: 768px) {
+    .footer__copyright {
+        margin: 4px 8px 0;
+        font-size: 12px;
+        line-height: calc(17/12);
+        min-width: 238px;
     }
 }

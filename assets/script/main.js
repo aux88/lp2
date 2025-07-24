@@ -28,3 +28,24 @@ const mySwiper = new Swiper('.swiper', {
   },
 
 });
+
+// アコーディオンのタイトルがクリックされたら
+$('.faq__question').on('click', function (e) {
+
+  // .faq__answerを選択
+  var content = $(this).next();
+
+  // .faq__answerを表示・非表示
+  content.slideToggle();
+
+  // クリックされた要素の中、または近くのアイコンを探す
+  var icon = $(this).find('.toggle-icon');
+
+  // アイコンのクラスを切り替え
+  if (icon.hasClass('bi-caret-down-fill')) {
+    icon.removeClass('bi-caret-down-fill').addClass('bi-caret-up-fill');
+  } else {
+    icon.removeClass('bi-caret-up-fill').addClass('bi-caret-down-fill');
+  }
+
+});

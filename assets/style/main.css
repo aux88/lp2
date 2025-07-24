@@ -361,11 +361,13 @@ a:hover, button:hover {
 
 .voices {
     padding-top: calc(51.5/390*100vw);
+    padding-bottom: calc(40.5/390*100vw);
 }
 
 @media (min-width: 768px) {
     .voices {
         padding-top: 4.5rem;
+        padding-bottom: 4.7rem;
     }
 }
 
@@ -555,7 +557,7 @@ a:hover, button:hover {
 
 @media (min-width: 768px) {
     .swiper-button-prev {
-      left: -88px;
+        left: -88px;
     }
 }
 
@@ -579,9 +581,9 @@ a:hover, button:hover {
 
 @media (min-width: 768px) {
     .swiper-pagination-bullet {
-    height: 9px;
-    width: 9px;
-}
+        height: 9px;
+        width: 9px;
+    }
 }
 
 .swiper-pagination-bullet-active {
@@ -595,5 +597,162 @@ a:hover, button:hover {
 @media (min-width: 768px) {
     .swiper-pagination {
         bottom: -39px !important;
+    }
+}
+
+
+/* よくあるご質問
+------------------------------------- */
+
+.faq {
+    background: linear-gradient(90deg, #F4FFE8, #C6F0FE);
+    padding-top: calc(17.6/390*100vw);
+    margin-bottom: 1.8rem;
+}
+
+@media (min-width: 768px) {
+    .faq {
+        padding-top: 2rem;
+        padding-bottom: 1.4rem;
+        margin-bottom: 3rem;
+    }
+}
+
+.faq__title {
+    text-align: center;
+    font-size: calc(30/390*100vw);
+    font-weight: 700;
+    letter-spacing: calc(1.6/390*100vw);
+}
+
+@media (min-width: 768px) {
+    .faq__title {
+        font-size: 2.8125rem;
+        padding-top: 8px;
+        letter-spacing: 0.1rem;
+    }
+}
+
+.faq__title--japanese {
+    font-size: calc(16/390*100vw);
+    padding-top: calc(9/390 *100vw);
+    padding-bottom: calc(17/390 * 100vw);
+    font-weight: 600;
+    letter-spacing: 0;
+}
+
+@media (min-width: 768px) {
+    .faq__title--japanese {
+        font-size: 20px;
+        padding-top: 15px;
+        padding-bottom: 22px;
+    }
+}
+
+@media (min-width: 768px) {
+    .faq__container {
+        max-width: 600px;
+        margin: 0 auto;
+    }
+}
+
+.faq__item {
+    background-color: #fff;
+    margin: 20px auto;
+    padding: 16px;
+    font-size: 15px;
+}
+
+
+@media (min-width: 768px) {
+    .faq__item {
+        padding: 1.2rem;
+    }
+}
+
+/* アコーディオンの質問・回答部分 */
+.faq__question,
+.faq__answer {
+    padding-left: 28px;
+    line-height: calc(28/15);
+}
+
+@media (min-width: 768px) {
+
+    .faq__question,
+    .faq__answer {
+        padding-left: 38px;
+    }
+}
+
+/* アコーディオンの質問部分のみ */
+.faq__question {
+    position: relative;
+    color: #444;
+    padding-right: 16px;
+}
+
+@media (min-width: 768px) {
+    .faq__question {
+        padding-right: 24px;
+    }
+}
+
+/* アコーディオンの回答部分 */
+.faq__answer {
+    display: none;
+    color: #000;
+    margin-top: 0.6rem;
+    margin-bottom: 0.6rem;
+}
+
+@media (min-width: 768px) {
+    .faq__answer {
+        padding-right: 22px;
+    }
+}
+
+.faq__question::before {
+    content: "Q.";
+}
+
+.faq__answer::before {
+    content: 'A.';
+}
+
+.faq__question::before,
+.faq__answer::before {
+    font-family: "EB Garamond", serif;
+    font-size: 16px;
+    display: inline-block;
+    text-indent: -1.8rem;
+}
+
+@media (min-width: 768px) {
+
+    .faq__question::before,
+    .faq__answer::before {
+        font-size: 18px;
+        text-indent: -2rem;
+    }
+}
+
+/* 初期状態を表示するとき用のクラス */
+.faq__answer--active {
+    display: block;
+}
+
+.open-icon {
+    position: absolute;
+    top: 5.5px;
+    right: -1px;
+    font-size: 15px;
+}
+
+@media (min-width: 768px) {
+    .open-icon {
+        top: 0;
+        right: 0.2rem;
+        font-size: 1.2rem;
     }
 }

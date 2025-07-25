@@ -424,9 +424,7 @@ a:hover, button:hover {
 @media (min-width: 768px) {
     .voices__item {
         max-width: 300px;
-        height: 388px;
-        padding: 40px 18px 0 16px;
-        overflow: auto;
+        padding: 40px 18px 35px 16px;
     }
 }
 
@@ -561,7 +559,6 @@ a:hover, button:hover {
 .swiper__container {
     position: relative;
     width: calc(280/390*100vw);
-    height: calc(344/390*100vw);
     margin: calc(36/390*100vw) auto;
 }
 
@@ -569,7 +566,6 @@ a:hover, button:hover {
 @media (min-width: 768px) {
     .swiper__container {
         max-width: 980px;
-        height: 388px;
         margin: 40px auto;
     }
 }

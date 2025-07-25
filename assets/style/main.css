@@ -27,11 +27,6 @@ a {
     text-decoration: none;
 }
 
-a:hover, button:hover {
-    opacity: .6;
-}
-
-
 /* 部品
 ------------------------------------- */
 
@@ -259,6 +254,11 @@ a:hover, button:hover {
     border-radius: calc(34/390*100vw);
 }
 
+.shopping__button--online:hover {
+    color:#46C4DB;
+    background-color: #fff;
+    border: 2px solid #46C4DB;
+}
 
 @media (min-width: 768px) {
     .shopping__button--online {
@@ -283,6 +283,12 @@ a:hover, button:hover {
     border-radius: calc(34/390*100vw);
 }
 
+.shopping__form:hover {
+    color:#5DD5AB;
+    background-color: #fff;
+    border: 2px solid #5DD5AB;
+}
+
 @media (min-width: 768px) {
     .shopping__form {
         min-width: 220px;
@@ -294,11 +300,6 @@ a:hover, button:hover {
     }
 }
 
-.shopping__form:hover {
-    opacity: .6;
-}
-
-
 .shopping__button--purchase {
     width: 100%;
     height: calc(58 / 390 * 100vw);
@@ -309,7 +310,6 @@ a:hover, button:hover {
         max-height: 58px;
     }
 }
-
 
 /* 特徴
 ------------------------------------- */

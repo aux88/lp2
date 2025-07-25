@@ -48,10 +48,12 @@
                     <div class="shopping__background">
                         <div class="shopping__product">
                             <h3 class="shopping__product-name">キラメキクリーム</h3>
-                            <p class="shopping__product-price">税込  4,000円</p>
+                            <p class="shopping__product-price">税込 4,000円</p>
                         </div>
-                        <a href="#" class="shopping__button shopping__button--online">オンラインショップへ</a>
-                        <a href="#" class="shopping__button shopping__button--purchase">購入する</a>
+                        <a href="#" class="shopping__button--online">オンラインショップへ</a>
+                        <form action="/cart/" method="post" class="shopping__form">
+                            <input type="submit" name="button" class="shopping__button--purchase" value="購入する">
+                        </form>
                     </div>
                 </div>
             </section>
@@ -192,27 +194,29 @@
                             <p class="shopping__product-price">税込 4,000円</p>
                         </div>
                         <a href="#" class="shopping__button shopping__button--online">オンラインショップへ</a>
-                        <a href="#" class="shopping__button shopping__button--purchase">購入する</a>
+                        <form action="/cart/" method="post" class="shopping__form">
+                            <input type="submit" name="button" class="shopping__button--purchase" value="購入する">
+                        </form>
                     </div>
                 </div>
             </section>
         </main>
         <footer class="footer">
             <div class="footer-container">
-            <a class="pagetop" href="#"><i class="bi bi-arrow-up-short"></i></a>
-            <div class="footer__logo">
-                <img class="footer__logo__image" src="./assets/image/footer_logo.svg" alt="Kira-meki">
-            </div>
-            <nav class="footer__nav">
-                <ul class="footer__list">
-                    <li class="footer__item"><a href="/about" class="footer__link">会社概要</a></li>
-                    <li class="footer__item"><a href="/privacy-policy" class="footer__link">個人情報保護ポリシー</a></li>
-                    <li class="footer__item"><a href="/contact" class="footer__link">お問い合わせ</a></li>
-                </ul>
-            </nav>
-            <p class="footer__copyright">
-                © 2023 Kira-meki Inc. All rights reserved.
-            </p>
+                <a class="pagetop" href="#"><i class="bi bi-arrow-up-short"></i></a>
+                <div class="footer__logo">
+                    <img class="footer__logo__image" src="./assets/image/footer_logo.svg" alt="Kira-meki">
+                </div>
+                <nav class="footer__nav">
+                    <ul class="footer__list">
+                        <li class="footer__item"><a href="/company/" class="footer__link">会社概要</a></li>
+                        <li class="footer__item"><a href="/privacy-policy/" class="footer__link">個人情報保護ポリシー</a></li>
+                        <li class="footer__item"><a href="/contact/" class="footer__link">お問い合わせ</a></li>
+                    </ul>
+                </nav>
+                <p class="footer__copyright">
+                    © 2023 Kira-meki Inc. All rights reserved.
+                </p>
             </div>
         </footer>
 

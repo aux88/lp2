@@ -634,7 +634,7 @@ a {
 
 .swiper-button-prev {
     left: calc(-39/390*100vw);
-    background-image: url("../image/arrow-left-circle-fill.png")
+    background-image: url("/assets/image/arrow_left_circle_fill.png")
 }
 
 @media (min-width: 768px) {
@@ -645,7 +645,7 @@ a {
 
 .swiper-button-next {
     right: calc(-39/390*100vw);
-    background-image: url("../image/arrow-right-circle-fill.png");
+    background-image: url("/assets/image/arrow_right_circle_fill.png");
 }
 
 @media (min-width: 768px) {

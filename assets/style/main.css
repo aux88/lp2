@@ -7,7 +7,7 @@ html {
 }
 
 body {
-    font-family: "Noto Serif", serif;
+    font-family: "Noto Serif JP", serif;
     font-weight: 400;
     line-height: 1.2;
     color: #000;
@@ -43,7 +43,7 @@ a:hover, button:hover {
 
 @media (max-width: 767px) {
     .contents-width {
-        padding: 1rem;
+        padding: 0 calc(16/390 *100vw);
     }
 }
 
@@ -67,7 +67,7 @@ a:hover, button:hover {
 .top {
     position: relative;
     height: calc(557 / 390 * 100vw);
-    margin-bottom: calc(32 / 390 * 100vw);
+    margin-bottom: calc(50 / 390 * 100vw);
     ;
 }
 
@@ -79,34 +79,34 @@ a:hover, button:hover {
     }
 }
 
-.company-logo {
+.top__company-logo {
     display: flex;
     justify-content: center;
-    width: calc(143 / 390 * 100vw);
+    width: calc(139 / 390 * 100vw);
     margin: calc(30 / 390 * 100vw) auto 0;
     text-align: center;
 }
 
 @media (min-width: 768px) {
-    .company-logo {
+    .top__company-logo {
         width: calc(166 / 1500 * 100vw);
         margin: calc(38 / 1500 * 100vw) auto 0;
     }
 }
 
-.main-visual {
+.top__main-visual {
     position: relative;
-    height: 115vw;
+    height: 115.3vw;
     overflow: hidden;
 }
 
 @media (min-width: 768px) {
-    .main-visual {
+    .top__main-visual {
         height: calc(720/1500 * 100vw);
     }
 }
 
-.main-visual::before {
+.top__main-visual::before {
     position: absolute;
     z-index: -1;
     display: block;
@@ -120,26 +120,26 @@ a:hover, button:hover {
 }
 
 @media (min-width: 768px) {
-    .main-visual::before {
+    .top__main-visual::before {
         background-position: -5.5vw -25.8vw;
         background-size: 134vw;
     }
 }
 
-.title {
+.top__title {
     position: absolute;
     top: 107vw;
     padding-left: calc(24 / 390 * 100vw);
 }
 
 @media (min-width: 768px) {
-    .title {
+    .top__title {
         top: 18vw;
         padding-left: calc(225 / 1500 * 100vw);
     }
 }
 
-.title-product-name {
+.top__product-name {
     font-size: calc(41 / 390 * 100vw);
     font-weight: 400;
     line-height: calc(51/41);
@@ -147,22 +147,23 @@ a:hover, button:hover {
 }
 
 @media (min-width: 768px) {
-    .title-product-name {
+    .top__product-name {
         font-size: calc(50 / 1500 * 100vw);
         line-height: calc(68/50);
         letter-spacing: calc(14.5/1500 *100vw);
     }
 }
 
-.title-catch {
-    margin-top: 0.5rem;
+.top__catchphrase {
+    margin-top: 0.6rem;
     font-size: calc(20 / 390 * 100vw);
     line-height: calc(29/20);
     letter-spacing: calc(5.92/390 *100vw);
 }
 
 @media (min-width: 768px) {
-    .title-catch {
+    .top__catchphrase {
+        margin-top: 0.5rem;
         font-size: calc(25 / 1500 * 100vw);
         line-height: calc(36/25);
         letter-spacing: calc(7.3/1500 *100vw);
@@ -172,7 +173,7 @@ a:hover, button:hover {
 /* ショッピング
 ------------------------------------- */
 .shopping {
-    margin-bottom: calc(33 / 390 * 100vw);
+    margin-bottom: calc(50 / 390 * 100vw);
     line-height: calc(26/18);
 }
 
@@ -217,14 +218,13 @@ a:hover, button:hover {
 }
 
 .shopping__product-name {
-    margin-bottom: calc(4.8/390 *100vw);
+    margin-bottom: calc(3.5/390 *100vw);
     font-size: calc(18 / 390 * 100vw);
     letter-spacing: .1rem;
 }
 
 @media (min-width: 768px) {
     .shopping__product-name {
-        padding-top: 0.3rem;
         margin-bottom: 0;
         font-size: 24px;
         letter-spacing: .15rem;
@@ -239,10 +239,10 @@ a:hover, button:hover {
 
 @media (min-width: 768px) {
     .shopping__product-price {
-        padding-top: 0.3rem;
+        padding-top: 0.6rem;
         font-size: 16px;
         line-height: calc(20/14);
-        letter-spacing: .07rem;
+        letter-spacing: .1rem;
     }
 }
 
@@ -292,8 +292,8 @@ a:hover, button:hover {
         display: flex;
         align-items: center;
         height: 550px;
-        background-position: 100% 54%;
-        background-size: 135.8vw;
+        background-position: 101% 53.7%;
+        background-size: 135.7vw;
     }
 
     .feature__container {
@@ -305,7 +305,7 @@ a:hover, button:hover {
 }
 
 .feature__text-block {
-    padding-top: calc(35.2/390*100vw);
+    padding-top: calc(50/390*100vw);
     color: #fff;
 }
 
@@ -332,7 +332,7 @@ a:hover, button:hover {
 }
 
 .feature__title--japanese {
-    padding-top: calc(14.4/390 *100vw);
+    padding-top: calc(13/390 *100vw);
     font-size: calc(24/390*100vw);
     font-weight: 600;
     text-align: center;
@@ -365,12 +365,12 @@ a:hover, button:hover {
 
 .voices {
     padding-top: calc(51.5/390*100vw);
-    padding-bottom: calc(40.5/390*100vw);
+    padding-bottom: calc(37/390*100vw);
 }
 
 @media (min-width: 768px) {
     .voices {
-        padding-top: 4.5rem;
+        padding-top: 4.6rem;
         padding-bottom: 4.7rem;
     }
 }
@@ -391,16 +391,17 @@ a:hover, button:hover {
 }
 
 .voices__title--japanese {
-    padding-top: calc(9/390 *100vw);
+    padding-top: calc(7/390 *100vw);
     font-size: calc(16/390*100vw);
     font-weight: 600;
-    letter-spacing: 0;
+    letter-spacing: calc(0.8/390 * 100vw);
 }
 
 @media (min-width: 768px) {
     .voices__title--japanese {
-        padding-top: 15px;
+        padding-top: 13px;
         font-size: 20px;
+        letter-spacing: 0.8px;
     }
 }
 
@@ -409,7 +410,7 @@ a:hover, button:hover {
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding: calc(28/390*100vw) calc(17/390*100vw) 0 calc(15/390*100vw);
+    padding: calc(28/390*100vw) calc(15/390*100vw) 0;
     margin: 0 auto;
     background-color: #DBF7F9;
 }
@@ -424,7 +425,7 @@ a:hover, button:hover {
 @media (min-width: 768px) {
     .voices__item {
         max-width: 300px;
-        padding: 40px 18px 35px 16px;
+        padding: 41px 18px 35px 16px;
     }
 }
 
@@ -458,7 +459,7 @@ a:hover, button:hover {
 }
 
 .voices__image--a {
-    object-position: calc(-25.6/390*100vw) calc(16/390*100vw);
+    object-position: calc(-25/390*100vw) calc(16/390*100vw);
     transform: scale(3);
 }
 
@@ -530,15 +531,19 @@ a:hover, button:hover {
 }
 
 .voices__name {
-    margin-top: calc(12.8/390*100vw);
+    margin-top: calc(12/390*100vw);
+    margin-left: calc(5/390*100vw);
     font-size: calc(14/390*100vw);
     font-weight: 400;
+    letter-spacing: calc(0.8/390 * 100vw);
 }
 
 @media (min-width: 768px) {
     .voices__name {
         margin-top: 12px;
+        margin-left: 3px;
         font-size: 15px;
+        letter-spacing: 0;
     }
 }
 
@@ -550,7 +555,7 @@ a:hover, button:hover {
 
 @media (min-width: 768px) {
     .voices__comment {
-        margin-top: 1rem;
+        margin-top: 0.8rem;
         font-size: 1rem;
         line-height: calc(28/16);
     }
@@ -559,14 +564,14 @@ a:hover, button:hover {
 .swiper__container {
     position: relative;
     width: calc(280/390*100vw);
-    margin: calc(36/390*100vw) auto;
+    margin: calc(38/390*100vw) auto;
 }
 
 
 @media (min-width: 768px) {
     .swiper__container {
         max-width: 980px;
-        margin: 40px auto;
+        margin: 41px auto;
     }
 }
 
@@ -634,7 +639,7 @@ a:hover, button:hover {
 }
 
 .swiper-pagination {
-    bottom: calc(-31/390*100vw) !important;
+    bottom: calc(-28/390*100vw) !important;
 }
 
 @media (min-width: 768px) {
@@ -647,15 +652,20 @@ a:hover, button:hover {
 ------------------------------------- */
 
 .faq {
-    padding-top: calc(17.6/390*100vw);
-    margin-bottom: 1.8rem;
+    padding-top: calc(33/390*100vw);
+    padding-bottom: calc(10 / 390 * 100vw);
+    margin-bottom: calc(48 / 390 * 100vw);
     background: linear-gradient(90deg, #F4FFE8, #C6F0FE);
+}
+
+.faq__container {
+    margin-top: calc(21/390*100vw);
 }
 
 @media (min-width: 768px) {
     .faq {
         padding-top: 2rem;
-        padding-bottom: 1.4rem;
+        padding-bottom: 1rem;
         margin-bottom: 3rem;
     }
 }
@@ -676,11 +686,11 @@ a:hover, button:hover {
 }
 
 .faq__title--japanese {
-    padding-top: calc(9/390 *100vw);
+    padding-top: calc(8/390 *100vw);
     padding-bottom: calc(17/390 * 100vw);
     font-size: calc(16/390*100vw);
     font-weight: 600;
-    letter-spacing: 0;
+    letter-spacing: calc(0.8/390 * 100vw);
 }
 
 @media (min-width: 768px) {
@@ -688,20 +698,21 @@ a:hover, button:hover {
         padding-top: 15px;
         padding-bottom: 22px;
         font-size: 20px;
+        letter-spacing: 0.8px;
     }
 }
 
 @media (min-width: 768px) {
     .faq__container {
         max-width: 600px;
-        margin: 0 auto;
+        margin: 1.2rem auto 0;
     }
 }
 
 .faq__item {
-    padding: 16px;
-    margin: 20px auto;
-    font-size: 15px;
+    padding: calc(17/390*100vw) calc(16/390*100vw);
+    margin-bottom: calc(18/390*100vw);
+    font-size: calc(15/390*100vw);
     background-color: #fff;
 }
 
@@ -709,13 +720,15 @@ a:hover, button:hover {
 @media (min-width: 768px) {
     .faq__item {
         padding: 1.2rem;
+        margin-bottom: 24px;
+        font-size: 15px;
     }
 }
 
 /* アコーディオンの質問・回答部分 */
 .faq__question,
 .faq__answer {
-    padding-left: 28px;
+    padding-left: calc(28/390*100vw);
     line-height: calc(28/15);
 }
 
@@ -723,13 +736,14 @@ a:hover, button:hover {
     .faq__question,
     .faq__answer {
         padding-left: 38px;
+        line-height: calc(27.5/15);
     }
 }
 
 /* アコーディオンの質問部分のみ */
 .faq__question {
     position: relative;
-    padding-right: 16px;
+    padding-right: calc(16/390*100vw);
     color: #444;
 }
 
@@ -742,14 +756,14 @@ a:hover, button:hover {
 /* アコーディオンの回答部分 */
 .faq__answer {
     display: none;
-    margin-top: 0.6rem;
-    margin-bottom: 0.6rem;
+    margin: calc(9.6/390*100vw) 0;
     color: #000;
 }
 
 @media (min-width: 768px) {
     .faq__answer {
-        padding-right: 22px;
+        padding-right: 15px;
+        margin: 0.75rem 0 0;
     }
 }
 
@@ -765,8 +779,8 @@ a:hover, button:hover {
 .faq__answer::before {
     display: inline-block;
     font-family: "EB Garamond", serif;
-    font-size: 16px;
-    text-indent: -1.8rem;
+    font-size: calc(16/390*100vw);
+    text-indent: calc(-28.8/390*100vw);
 }
 
 @media (min-width: 768px) {
@@ -784,9 +798,9 @@ a:hover, button:hover {
 
 .open-icon {
     position: absolute;
-    top: 5.5px;
-    right: -1px;
-    font-size: 15px;
+    top: calc(2.5/390*100vw);
+    right: calc(-1/390*100vw);
+    font-size: calc(15/390*100vw);
 }
 
 @media (min-width: 768px) {
@@ -817,23 +831,23 @@ a:hover, button:hover {
         flex-direction: row;
         align-items: center;
         max-width: 1200px;
-        padding-top: 40px;
-        padding-bottom: 40px;
+        padding-top: 39px;
+        padding-bottom: 41px;
     }
 }
 
 .footer__logo {
     margin: 0 auto;
-    margin-bottom: calc(30/390*100vw);
+    margin-bottom: calc(31/390*100vw);
 }
 
 .footer__logo__image {
-    max-width: calc(166/390*100vw);
+    max-width: calc(163/390*100vw);
 }
 
 @media (min-width: 768px) {
     .footer__logo {
-        padding-left: 32px;
+        padding-left: 34px;
         margin: 0;
     }
 
@@ -864,23 +878,25 @@ a:hover, button:hover {
 @media (min-width: 768px) {
     .footer__list {
         gap: 32px;
-        width: 637px;
+        width: 639px;
         font-size: 14px;
     }
 }
 
 .footer__copyright {
-    margin: calc(29/390*100vw) auto calc(23/390*100vw);
+    margin: calc(28/390*100vw) auto calc(24/390*100vw);
     font-size: max(11px, calc(11/390 * 100vw));
     color: #fff;
+    letter-spacing: calc(0.1 / 390 * 100vw);
 }
 
 @media (min-width: 768px) {
     .footer__copyright {
         min-width: 238px;
-        margin: 4px 8px 0;
+        margin: 3px 6px 0;
         font-size: 12px;
-        line-height: calc(17/12);
+        line-height: calc(17 / 12);
+        letter-spacing: 0.01px;
     }
 }
 

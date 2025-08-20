@@ -9,6 +9,7 @@ const mySwiper = new Swiper('.swiper', {
       slidesPerView: 3, // 768px以上の場合の表示数
       spaceBetween: 40,  // 必要に応じてスライド間の余白を変更可能
       slidesPerGroup: 3,
+      loopAddBlankSlides: false,
       centeredSlides: false,    // 左寄せにする
     }
   },
